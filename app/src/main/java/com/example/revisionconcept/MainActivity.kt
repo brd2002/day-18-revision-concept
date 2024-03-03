@@ -1,4 +1,4 @@
-package com.example.revisionconcept
+git package com.example.revisionconcept
 
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
