@@ -5,6 +5,8 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import com.example.revisionconcept.rommdb.DbBuilder
+import com.example.revisionconcept.rommdb.entity.Contact
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -16,5 +18,6 @@ class MainActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+        DbBuilder.getDb(this)?.contactDao()?.createContact(Contact(name = "Bharat ruidas" , phonenumber = "123456789" ))
     }
 }
