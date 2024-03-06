@@ -18,6 +18,6 @@ class MainActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-        DbBuilder.getDb(this)?.contactDao()?.createContact(Contact(name = "Bharat ruidas" , phonenumber = "123456789" ))
+//        DbBuilder.getDb(this)?.contactDao()?.createContact(Contact(name = "Bharat ruidas" , phonenumber = "123456789" ))
     }
 }
